@@ -1,9 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/estilos.css">    <meta charset="UTF-8">
     <title>Catálogo de Productos</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilos.css">
 </head>
