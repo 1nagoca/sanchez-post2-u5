@@ -1,5 +1,4 @@
-<html>
-<body>
-<h2>Hello World!</h2>
-</body>
-</html>
+<%
+    // Redirigir automáticamente al Servlet del Catálogo
+    response.sendRedirect(request.getContextPath() + "/catalogo");
+%>
