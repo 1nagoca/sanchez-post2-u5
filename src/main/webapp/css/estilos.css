@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-carrito, .btn-volver, .btn-agregar, .btn-vaciar, .btn-pagar {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-carrito { background-color: #007bff; }
+.btn-volver { background-color: #6c757d; }
+.btn-agregar { background-color: #28a745; width: 100%; margin-top: 10px; }
+.btn-vaciar { background-color: #dc3545; }
+.btn-pagar { background-color: #28a745; font-size: 16px; }
+
+/* Grid de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.producto-card h3 { margin: 0 0 10px 0; color: #007bff; }
+.precio { font-size: 1.2em; font-weight: bold; color: #28a745; }
+.stock { font-size: 0.9em; color: #666; }
+.input-cantidad { width: 50px; padding: 5px; text-align: center; }
+
+/* Tabla del Carrito */
+.tabla-carrito {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.tabla-carrito th, .tabla-carrito td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.acciones-carrito {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
